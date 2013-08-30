@@ -53,7 +53,7 @@
 	<div class="col-md-10">
 	<ul id="currentRoutine">
 		<li data-ng-repeat="exercise in routine.Exercises">
-			<col-md->{{exercise.Name}}: </col-md-><col-md->{{exercise.Quantity}} </col-md-><col-md->{{exercise.Unit}} </col-md-><col-md- ng-show="exercise.Sets > 0">for {{exercise.Sets}} sets</col-md->
+			<col-md->{{exercise.Name}}: </col-md-><col-md->{{exercise.Sets[0].Quantity}} </col-md-><col-md->{{exercise.Sets[0].Unit}} </col-md-><col-md- ng-show="exercise.Sets.length > 0">for {{exercise.Sets.length}} sets</col-md->
 		</li>
 	</ul>
 	</div>

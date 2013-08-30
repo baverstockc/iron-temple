@@ -1,6 +1,7 @@
 angular.module("ironTemple").factory("userService", function() {
 	var currentUser = "Christian";
 	var userRoutines = [];
+	var selectedRoutine = {};
 
 	return {
 		getCurrentUser : function() {
@@ -18,13 +19,21 @@ angular.module("ironTemple").factory("userService", function() {
 		getUserRoutines : function() {
 			var routines = [];
 			for (i=0; i<userRoutines.length; i++) {
-				if (userRoutines[i].Name = "currentUser") {
+				if (userRoutines[i].Name === currentUser) {
 					routines.push(userRoutines[i].Routine);
 				}
 			}
 
 			return routines;
 		},
+
+		getRoutine: function() {
+			return selectedRoutine;
+		},
+
+		selectRoutine : function(position) {
+			selectedRoutine = userRoutines[position];
+		}
 
 	};
 });

@@ -21,5 +21,10 @@ angular.module("ironTemple").config(function($routeProvider) {
 		controller: "routinesController"
 	});
 
+	$routeProvider.when("/Workout", {
+		templateUrl: "iron-temple/templates/workout.html",
+		controller: "routinesController"
+	});	
+
 	$routeProvider.otherwise({ redirectTo : "/homepage" });
 });

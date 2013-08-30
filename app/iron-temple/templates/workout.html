@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col-md-2">
+		<h2>Routine: {{selectedRoutine.Routine.Name}}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12" data-ng-repeat="exercise in selectedRoutine.Routine.Exercises">
+		<p>Exercise: {{exercise.Name}}</p>
+		<div class="col-md-6" data-ng-repeat="sets in exercise.Sets">
+		<span>Set {{$index+1}}: </span><span>{{sets.Quantity}} </span><span>{{sets.Unit}}</span>
+		</div>
+	</div>
+
+</div>

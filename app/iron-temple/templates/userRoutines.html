@@ -5,8 +5,11 @@
 </div>
 <div class="row">
 	<div class="col-md-8">
-		<ul>
-			<li data-ng-repeat="routine in routines">{{routine.Name}}</li>
-		</ul>
+		<table>
+			<tr data-ng-repeat="routine in routines">
+				<td>{{routine.Name}}</td>
+				<td><button class="btn btn-primary btn-xs" ng-click="workout($index)">Workout!</button></td>
+			</tr>
+		</table>
 	</div>
 </div>
