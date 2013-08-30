@@ -6,5 +6,15 @@ angular.module("ironTemple").config(function($routeProvider) {
 		controller: "homepageController"
 	});
 
+	$routeProvider.when("/UserSetup", {
+		templateUrl: "iron-temple/templates/userSetup.html",
+		controller: "userSetupController"
+	});
+
+	$routeProvider.whem("/NewRoutine", {
+		templateUrl: "iron-temple/templates/newRoutine.html",
+		controller: "userSetupController"
+	})
+
 	$routeProvider.otherwise({ redirectTo : "/homepage" });
 });
