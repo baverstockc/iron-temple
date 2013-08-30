@@ -18,10 +18,46 @@ body {
 	width: 217px;
 }     
 
+[class*="-img"] {
+	cursor: pointer;
+}
+
+.routine-img {
+	background-image: url("../../assets/img/routine.png");
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+	float: left;
+	margin-top: 10px;
+}
+
+.pattern-img {
+	background-image: url("../../assets/img/pattern.png");
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+	float: left;
+	margin-top: 10px;
+}
+
+.settings-img {
+	background-image: url("../../assets/img/settings.png");
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+	float: left;
+	margin-top: 10px;
+}
+
 .navbar {
 	border-radius: 0;
 }
 
 .container .jumbotron {
 	border-radius: 0;
+}
+
+.navbar-nav>li>a {
+	float: left;
+	cursor: pointer;
 }
