@@ -156,19 +156,24 @@ body {
   border-radius: 0;
 }
 
-/* line 88, ../sass/site.scss */
+/* line 87, ../sass/site.scss */
+.setup-options li {
+  padding: 5px 0 5px 0;
+}
+
+/* line 94, ../sass/site.scss */
 .navbar-nav li a {
   float: left;
   cursor: pointer;
 }
 
-/* line 95, ../sass/site.scss */
+/* line 101, ../sass/site.scss */
 .navbar-default .navbar-brand {
   font-size: 1.5em;
 }
 
 @media (max-width: 992px) {
-  /* line 101, ../sass/site.scss */
+  /* line 107, ../sass/site.scss */
   .col-md-3 {
     padding: 5px 0 5px 0;
   }
