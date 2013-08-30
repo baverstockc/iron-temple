@@ -1,3 +1,7 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,33 +65,4 @@ a img {
 /* line 116, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
-}
-
-/* line 5, ../sass/site.scss */
-body {
-  min-height: 800px;
-  background-color: #dddddd;
-}
-
-/* line 10, ../sass/site.scss */
-.main {
-  font-family: Segoe UI, Verdana, Arial;
-}
-
-/* line 14, ../sass/site.scss */
-.logo {
-  background-image: url("../../assets/img/temple-small.png");
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 217px;
-}
-
-/* line 21, ../sass/site.scss */
-.navbar {
-  border-radius: 0;
-}
-
-/* line 25, ../sass/site.scss */
-.container .jumbotron {
-  border-radius: 0;
 }

@@ -1,8 +1,27 @@
 @import "compass/reset";
 
+$main-color: #DDD;
+
+body {
+	min-height: 800px;
+	background-color: $main-color;
+}
+
+.main {
+	font-family: Segoe UI, Verdana, Arial;
+}
+
 .logo {
-	background-image: url("../../assets/img/temple.png");
+	background-image: url("../../assets/img/temple-small.png");
 	background-repeat: no-repeat;
-	height: 87px;
-	width: 377px;
+	height: 50px;
+	width: 217px;
+}     
+
+.navbar {
+	border-radius: 0;
+}
+
+.container .jumbotron {
+	border-radius: 0;
 }

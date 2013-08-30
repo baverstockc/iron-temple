@@ -63,31 +63,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 5, ../sass/site.scss */
-body {
-  min-height: 800px;
-  background-color: #dddddd;
-}
-
-/* line 10, ../sass/site.scss */
+/* line 3, ../../sass/sass/site.scss */
 .main {
   font-family: Segoe UI, Verdana, Arial;
 }
 
-/* line 14, ../sass/site.scss */
+/* line 7, ../../sass/sass/site.scss */
 .logo {
-  background-image: url("../../assets/img/temple-small.png");
+  background-image: url("../../assets/img/temple.png");
   background-repeat: no-repeat;
-  height: 50px;
-  width: 217px;
-}
-
-/* line 21, ../sass/site.scss */
-.navbar {
-  border-radius: 0;
-}
-
-/* line 25, ../sass/site.scss */
-.container .jumbotron {
-  border-radius: 0;
+  height: 87px;
+  width: 377px;
 }
