@@ -62,3 +62,11 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 3, ../sass/site.scss */
+.logo {
+  background-image: url("../../assets/img/temple.png");
+  background-repeat: no-repeat;
+  height: 87px;
+  width: 377px;
+}
