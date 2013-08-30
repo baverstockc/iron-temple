@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 5, ../sass/site.scss */
 body {
-  min-height: 800px;
+  height: 100%;
   background-color: #dddddd;
 }
 
@@ -118,17 +118,32 @@ body {
 }
 
 /* line 52, ../sass/site.scss */
+.weights-img {
+  background-image: url("../../assets/img/weightlifting.png");
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 48px;
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 61, ../sass/site.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 56, ../sass/site.scss */
+/* line 65, ../sass/site.scss */
 .container .jumbotron {
   border-radius: 0;
 }
 
-/* line 60, ../sass/site.scss */
+/* line 69, ../sass/site.scss */
 .navbar-nav > li > a {
   float: left;
   cursor: pointer;
+}
+
+/* line 74, ../sass/site.scss */
+.navbar-default .navbar-brand {
+  font-size: 1.5em;
 }

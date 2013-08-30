@@ -3,7 +3,7 @@
 $main-color: #DDD;
 
 body {
-	min-height: 800px;
+	height:100%;
 	background-color: $main-color;
 }
 
@@ -49,6 +49,15 @@ body {
 	margin-top: 10px;
 }
 
+.weights-img {
+	background-image: url("../../assets/img/weightlifting.png");
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 48px;
+	float: left;
+	margin-left: 10px;
+}
+
 .navbar {
 	border-radius: 0;
 }
@@ -60,4 +69,8 @@ body {
 .navbar-nav>li>a {
 	float: left;
 	cursor: pointer;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 1.5em;
 }
