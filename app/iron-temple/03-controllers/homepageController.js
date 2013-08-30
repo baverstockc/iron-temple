@@ -1,4 +1,4 @@
 angular.module("ironTemple").controller("homepageController", function($scope) {
 	
-	$scope.test = "Hello World";
+	$scope.test = "Welcome to the Iron Temple.";
 });
