@@ -96,16 +96,11 @@ body {
 }
 
 /* line 33, ../sass/site.scss */
-.info {
-  background-color: white;
-}
-
-/* line 37, ../sass/site.scss */
 .info-header {
   font-size: 1.2em;
 }
 
-/* line 41, ../sass/site.scss */
+/* line 37, ../sass/site.scss */
 .routine-img {
   background-image: url("../../assets/img/routine.png");
   background-repeat: no-repeat;
@@ -115,7 +110,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 50, ../sass/site.scss */
+/* line 46, ../sass/site.scss */
 .pattern-img {
   background-image: url("../../assets/img/pattern.png");
   background-repeat: no-repeat;
@@ -125,7 +120,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 59, ../sass/site.scss */
+/* line 55, ../sass/site.scss */
 .settings-img {
   background-image: url("../../assets/img/settings.png");
   background-repeat: no-repeat;
@@ -135,7 +130,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 68, ../sass/site.scss */
+/* line 64, ../sass/site.scss */
 .weights-img {
   background-image: url("../../assets/img/weightlifting.png");
   background-repeat: no-repeat;
@@ -145,23 +140,23 @@ body {
   margin-left: 10px;
 }
 
-/* line 77, ../sass/site.scss */
+/* line 73, ../sass/site.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 81, ../sass/site.scss */
+/* line 77, ../sass/site.scss */
 .container .jumbotron {
   border-radius: 0;
 }
 
-/* line 87, ../sass/site.scss */
+/* line 83, ../sass/site.scss */
 .navbar-nav li a {
   float: left;
   cursor: pointer;
 }
 
-/* line 94, ../sass/site.scss */
+/* line 90, ../sass/site.scss */
 .navbar-default .navbar-brand {
   font-size: 1.5em;
 }
