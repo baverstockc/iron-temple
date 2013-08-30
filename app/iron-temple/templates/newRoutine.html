@@ -1,23 +1,31 @@
-<div class="row-fluid">
-	<div class="span4">
+<div class="row">
+	<div class="col-md-4">
 		<h3>New Routine</h3>
 	</div>
 </div>
-<div class="row-fluid">
-	<div class="span4">
+<div class="row">
+	<div class="col-md-1">
+		<p>Name</p>
+	</div>
+	<div class="col-md-3">
+		<input type="text" name="routineName" data-ng-model="routineName" />
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
 	<p>Add to routine</p>
 	</div>
 </div>
-<div class="row-fluid">
-	<div class="row-fluid">
-		<div class="span4">
-			<input type="text" name="exerciseName" data-ng-model="exerciseName" placeholder="Exercise name"/>
+<form name="routineForm">
+	<div class="row">
+		<div class="col-md-3">
+			<input type="text" name="exerciseName" data-ng-model="exerciseName" placeholder="Exercise name" required/>
 		</div>
-		<div class="span1 offset4">
-			<input type="number" min=0 name="exerciseQuantity" data-ng-model="exerciseQuantity" placeholder="Quantity"/>
+		<div class="col-md-3">
+			<input type="number" min=0 name="exerciseQuantity" data-ng-model="exerciseQuantity" placeholder="Quantity" required/>
 		</div>
-		<div class="span1 offset5">
-			<select data-ng-model="exerciseUnit">
+		<div class="col-md-1">
+			<select data-ng-model="exerciseUnit" required>
 				<option selected>Select a unit</option>
 				<option>Reps</option>
 				<option>Minutes</option>
@@ -25,26 +33,32 @@
 				<option>Calories</option>
 			</select>
 		</div>
-		<div class="span1">
-			<input type="number" data-ng-model="exerciseSets" name="exerciseSets" data-ng-show="showSets()" placeholder="Sets"/>
+		<div class="col-md-1">
+			<input type="number" data-ng-model="exerciseSets" name="exerciseSets" data-ng-show="exerciseUnit =='Reps'" placeholder="Sets"/>
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span1">
-			<button data-ng-click="addExercise()">Add to Routine</button>
+	<div class="row">
+		<div class="col-md-1 col-md-offset-6">
+			<button class="btn btn-primary" data-ng-click="addExercise()">Add to Routine</button>
 		</div>
 	</div>
-</div>
-<div class="row-fluid">
-	<div class="span4">
+</form>
+</br>
+<div class="row">
+	<div class="col-md-4">
 		<p>Current routine</p>
 	</div>
 </div>
-<div class="row-fluid">
-	<div class="span10">
+<div class="row">
+	<div class="col-md-10">
 	<ul id="currentRoutine">
-		<li data-ng-repeat="exercise in routine">{{exercise.Name}}  {{exercise.Quantity}} {{exercise.Unit}} {{exercise.Sets}}</li>
+		<li data-ng-repeat="exercise in routine.Exercises">
+			<col-md->{{exercise.Name}}: </col-md-><col-md->{{exercise.Quantity}} </col-md-><col-md->{{exercise.Unit}} </col-md-><col-md- ng-show="exercise.Sets > 0">for {{exercise.Sets}} sets</col-md->
+		</li>
 	</ul>
 	</div>
-</div>	
-	
+</div>
+<div class="row">
+	<div clas=".col-md-1 .col-md-offset-6"></div>
+	<button class="btn btn-primary" data-ng-show="routine.Exercises.length > 0" data-ng-click="saveRoutine()">Save</button>
+</div>

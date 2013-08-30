@@ -1,13 +1,13 @@
 angular.module("ironTemple").controller("userSetupController", function($scope, $location, userService){
 	$scope.username = userService.getCurrentUser();
-	$scope.routine = [];
+	$scope.routine = {
+		Name: "",
+		Exercises: []
+	};
 	$scope.exerciseName = "";
 	$scope.exerciseQuantity;
-	$scope.exerciseUnit = "";
-
-	$scope.newRoutine = function() {
-		$location.path("/NewRoutine");
-	};
+	$scope.exerciseUnit = "Select a unit";
+	$scope.routineName= "";
 
 	$scope.addExercise = function() {
 		var newExercise = {
@@ -16,23 +16,24 @@ angular.module("ironTemple").controller("userSetupController", function($scope, 
 			Unit: $scope.exerciseUnit,
 			Sets: $scope.exerciseSets
 		};
-		$scope.routine.push(newExercise);
+		$scope.routine.Name = $scope.routineName;
+		$scope.routine.Exercises.push(newExercise);
 		resetExercise();
 	};
 
-	$scope.showSets = function() {
-		if ($scope.exerciseUnit === "Reps") { 
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
+	$scope.exerciseValid = function() {
+		//add validation
+	};
+
+	$scope.saveRoutine = function() {
+		userService.addUserRoutine($scope.routine);
+		$location.path("/");
+	};
 
 	function resetExercise() {
 		$scope.exerciseName = "";
 		$scope.exerciseQuantity = 0;
-		$scope.exerciseUnit = "";
+		$scope.exerciseUnit = "Select a unit";
 		$scope.exerciseSets = 0;
 	}
 });
