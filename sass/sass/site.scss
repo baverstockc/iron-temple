@@ -1,6 +1,6 @@
 @import "compass/reset";
 
-$main-color: #DDD;
+$main-color: white;
 
 body {
 	height:100%;
@@ -9,6 +9,14 @@ body {
 
 .main {
 	font-family: Segoe UI, Verdana, Arial;
+
+	.footer-area {
+		padding-top: 48px;
+	}
+
+	.jumbotron {	
+		text-align: center;
+	}
 }
 
 .logo {
@@ -20,6 +28,14 @@ body {
 
 [class*="-img"] {
 	cursor: pointer;
+}
+
+.info {
+	background-color: white;
+}
+
+.info-header{
+	font-size: 1.2em;
 }
 
 .routine-img {
@@ -66,11 +82,17 @@ body {
 	border-radius: 0;
 }
 
-.navbar-nav>li>a {
-	float: left;
-	cursor: pointer;
+.navbar-nav {
+	li {
+		a {
+			float: left;
+			cursor: pointer;
+		}
+	}
 }
 
 .navbar-default .navbar-brand {
 	font-size: 1.5em;
 }
+
+

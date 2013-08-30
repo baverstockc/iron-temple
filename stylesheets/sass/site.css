@@ -73,8 +73,12 @@ body {
 .main {
   font-family: Segoe UI, Verdana, Arial;
 }
+/* line 13, ../../sass/sass/site.scss */
+.main .footer-area {
+  padding-top: 48px;
+}
 
-/* line 14, ../../sass/sass/site.scss */
+/* line 18, ../../sass/sass/site.scss */
 .logo {
   background-image: url("../../assets/img/temple-small.png");
   background-repeat: no-repeat;
@@ -82,12 +86,22 @@ body {
   width: 217px;
 }
 
-/* line 21, ../../sass/sass/site.scss */
+/* line 25, ../../sass/sass/site.scss */
 [class*="-img"] {
   cursor: pointer;
 }
 
-/* line 25, ../../sass/sass/site.scss */
+/* line 29, ../../sass/sass/site.scss */
+.info {
+  background-color: white;
+}
+
+/* line 33, ../../sass/sass/site.scss */
+.info-header {
+  font-size: 1.2em;
+}
+
+/* line 37, ../../sass/sass/site.scss */
 .routine-img {
   background-image: url("../../assets/img/routine.png");
   background-repeat: no-repeat;
@@ -97,7 +111,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 34, ../../sass/sass/site.scss */
+/* line 46, ../../sass/sass/site.scss */
 .pattern-img {
   background-image: url("../../assets/img/pattern.png");
   background-repeat: no-repeat;
@@ -107,7 +121,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 43, ../../sass/sass/site.scss */
+/* line 55, ../../sass/sass/site.scss */
 .settings-img {
   background-image: url("../../assets/img/settings.png");
   background-repeat: no-repeat;
@@ -117,7 +131,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 52, ../../sass/sass/site.scss */
+/* line 64, ../../sass/sass/site.scss */
 .weights-img {
   background-image: url("../../assets/img/weightlifting.png");
   background-repeat: no-repeat;
@@ -127,23 +141,23 @@ body {
   margin-left: 10px;
 }
 
-/* line 61, ../../sass/sass/site.scss */
+/* line 73, ../../sass/sass/site.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 65, ../../sass/sass/site.scss */
+/* line 77, ../../sass/sass/site.scss */
 .container .jumbotron {
   border-radius: 0;
 }
 
-/* line 69, ../../sass/sass/site.scss */
-.navbar-nav > li > a {
+/* line 83, ../../sass/sass/site.scss */
+.navbar-nav li a {
   float: left;
   cursor: pointer;
 }
 
-/* line 74, ../../sass/sass/site.scss */
+/* line 90, ../../sass/sass/site.scss */
 .navbar-default .navbar-brand {
   font-size: 1.5em;
 }
