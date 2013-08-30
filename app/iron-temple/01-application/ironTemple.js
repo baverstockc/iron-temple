@@ -11,7 +11,7 @@ angular.module("ironTemple").config(function($routeProvider) {
 		controller: "userSetupController"
 	});
 
-	$routeProvider.whem("/NewRoutine", {
+	$routeProvider.when("/NewRoutine", {
 		templateUrl: "iron-temple/templates/newRoutine.html",
 		controller: "userSetupController"
 	})

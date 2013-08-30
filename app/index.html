@@ -11,7 +11,7 @@
 </header>
 <div class="main">
       <!-- Static navbar -->
-      <div class="navbar navbar-default">
+      <div class="navbar navbar-default" data-ng-controller="navController">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
@@ -24,6 +24,7 @@
           <ul class="nav navbar-nav">
             <li><a href="#">Routines</a></li>
             <li><a href="#">Patterns</a></li>
+            <li><a href"#" data-ng-click="userSetup()">Setup</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Login</a></li>
@@ -44,6 +45,9 @@
 <script type="text/javascript" src="../components/angular/angular.min.js"></script>
 <script type="text/javascript" src="./iron-temple/01-application/ironTemple.js"> </script>
 <script type="text/javascript" src="./iron-temple/03-controllers/homepageController.js"> </script>
+<script type="text/javascript" src="./iron-temple/03-controllers/userSetupController.js"> </script>
+<script type="text/javascript" src="./iron-temple/03-controllers/navController.js"> </script>
+<script type="text/javascript" src="./iron-temple/04-services/userService.js"> </script>
 <script type="text/javascript" src="../components/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html> 
