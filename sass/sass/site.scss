@@ -2,6 +2,10 @@
 
 $main-color: white;
 
+.add-exercise {
+	margin-top: 20px;
+}
+
 body {
 	height:100%;
 	background-color: $main-color;
@@ -91,4 +95,10 @@ body {
 	font-size: 1.5em;
 }
 
+
+@media (max-width: 992px) { 
+	.col-md-3 {
+		padding: 5px 0 5px 0;
+	}
+ }
 

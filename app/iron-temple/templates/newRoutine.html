@@ -13,7 +13,7 @@
 </div>
 <div class="row">
 	<div class="col-md-4">
-	<p>Add to routine</p>
+	<h3>Add New Exercise</h3>
 	</div>
 </div>
 <form name="routineForm">
@@ -24,7 +24,7 @@
 		<div class="col-md-3">
 			<input type="number" min=0 name="exerciseQuantity" data-ng-model="exerciseQuantity" placeholder="Quantity" required/>
 		</div>
-		<div class="col-md-1">
+		<div class="col-md-3">
 			<select data-ng-model="exerciseUnit" required>
 				<option selected>Select a unit</option>
 				<option>Reps</option>
@@ -33,12 +33,12 @@
 				<option>Calories</option>
 			</select>
 		</div>
-		<div class="col-md-1">
+		<div class="col-md-3">
 			<input type="number" data-ng-model="exerciseSets" name="exerciseSets" data-ng-show="exerciseUnit =='Reps'" placeholder="Sets"/>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-1 col-md-offset-6">
+	<div class="row add-exercise">
+		<div class="col-md-2">
 			<button class="btn btn-primary" data-ng-click="addExercise()">Add to Routine</button>
 		</div>
 	</div>
@@ -59,6 +59,6 @@
 	</div>
 </div>
 <div class="row">
-	<div clas=".col-md-1 .col-md-offset-6"></div>
-	<button class="btn btn-primary" data-ng-show="routine.Exercises.length > 0" data-ng-click="saveRoutine()">Save</button>
+	<div class="col-md-2">
+	<button class="btn btn-primary" data-ng-show="routine.Exercises.length > 0" data-ng-click="saveRoutine()">Save</button></div>
 </div>

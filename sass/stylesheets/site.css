@@ -64,25 +64,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 5, ../sass/site.scss */
+.add-exercise {
+  margin-top: 20px;
+}
+
+/* line 9, ../sass/site.scss */
 body {
   height: 100%;
   background-color: white;
 }
 
-/* line 10, ../sass/site.scss */
+/* line 14, ../sass/site.scss */
 .main {
   font-family: Segoe UI, Verdana, Arial;
 }
-/* line 13, ../sass/site.scss */
+/* line 17, ../sass/site.scss */
 .main .footer-area {
   padding-top: 48px;
 }
-/* line 17, ../sass/site.scss */
+/* line 21, ../sass/site.scss */
 .main .jumbotron {
   text-align: center;
 }
 
-/* line 22, ../sass/site.scss */
+/* line 26, ../sass/site.scss */
 .logo {
   background-image: url("../../assets/img/temple-small.png");
   background-repeat: no-repeat;
@@ -90,17 +95,17 @@ body {
   width: 217px;
 }
 
-/* line 29, ../sass/site.scss */
+/* line 33, ../sass/site.scss */
 [class*="-img"] {
   cursor: pointer;
 }
 
-/* line 33, ../sass/site.scss */
+/* line 37, ../sass/site.scss */
 .info-header {
   font-size: 1.2em;
 }
 
-/* line 37, ../sass/site.scss */
+/* line 41, ../sass/site.scss */
 .routine-img {
   background-image: url("../../assets/img/routine.png");
   background-repeat: no-repeat;
@@ -110,7 +115,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 46, ../sass/site.scss */
+/* line 50, ../sass/site.scss */
 .pattern-img {
   background-image: url("../../assets/img/pattern.png");
   background-repeat: no-repeat;
@@ -120,7 +125,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 55, ../sass/site.scss */
+/* line 59, ../sass/site.scss */
 .settings-img {
   background-image: url("../../assets/img/settings.png");
   background-repeat: no-repeat;
@@ -130,7 +135,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 64, ../sass/site.scss */
+/* line 68, ../sass/site.scss */
 .weights-img {
   background-image: url("../../assets/img/weightlifting.png");
   background-repeat: no-repeat;
@@ -140,23 +145,30 @@ body {
   margin-left: 10px;
 }
 
-/* line 73, ../sass/site.scss */
+/* line 77, ../sass/site.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 77, ../sass/site.scss */
+/* line 81, ../sass/site.scss */
 .container .jumbotron {
   border-radius: 0;
 }
 
-/* line 83, ../sass/site.scss */
+/* line 87, ../sass/site.scss */
 .navbar-nav li a {
   float: left;
   cursor: pointer;
 }
 
-/* line 90, ../sass/site.scss */
+/* line 94, ../sass/site.scss */
 .navbar-default .navbar-brand {
   font-size: 1.5em;
+}
+
+@media (max-width: 992px) {
+  /* line 100, ../sass/site.scss */
+  .col-md-3 {
+    padding: 5px 0 5px 0;
+  }
 }
