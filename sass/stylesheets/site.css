@@ -139,35 +139,36 @@ body {
 .weights-img {
   background-image: url("../../assets/img/weightlifting.png");
   background-repeat: no-repeat;
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
   float: left;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
-/* line 77, ../sass/site.scss */
+/* line 78, ../sass/site.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 81, ../sass/site.scss */
+/* line 82, ../sass/site.scss */
 .container .jumbotron {
   border-radius: 0;
 }
 
-/* line 87, ../sass/site.scss */
+/* line 88, ../sass/site.scss */
 .navbar-nav li a {
   float: left;
   cursor: pointer;
 }
 
-/* line 94, ../sass/site.scss */
+/* line 95, ../sass/site.scss */
 .navbar-default .navbar-brand {
   font-size: 1.5em;
 }
 
 @media (max-width: 992px) {
-  /* line 100, ../sass/site.scss */
+  /* line 101, ../sass/site.scss */
   .col-md-3 {
     padding: 5px 0 5px 0;
   }
