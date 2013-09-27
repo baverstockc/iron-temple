@@ -178,3 +178,9 @@ body {
     padding: 5px 0 5px 0;
   }
 }
+@media (max-width: 500px) {
+  /* line 113, ../sass/site.scss */
+  .settings-img, .routine-img, .pattern-img {
+    display: none;
+  }
+}

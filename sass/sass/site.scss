@@ -109,3 +109,9 @@ body {
 	}
  }
 
+ @media (max-width: 500px) { 
+	.settings-img, .routine-img, .pattern-img {
+		display: none;
+	}
+ }
+
