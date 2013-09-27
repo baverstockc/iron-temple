@@ -1,5 +1,5 @@
 angular.module("ironTemple").controller("userSetupController", function($scope, $location, userService){
-	$scope.username = userService.getCurrentUser();
+	$scope.user = userService.getCurrentUser();
 	$scope.routine = {
 		Name: "",
 		Exercises: []

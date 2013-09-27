@@ -1,8 +1,12 @@
 angular.module("ironTemple").factory("userService", function() {
-	var currentUser = "Christian";
+	var currentUser = {
+		Id: "F4E1ED37-F4B5-46BE-82F4-60DC1A1BF0DE",
+		Name: "Christian",
+		Measurements: "M"
+	};
 	var userRoutines = [
 		{
-			UserName: "Christian",
+			UserId: "F4E1ED37-F4B5-46BE-82F4-60DC1A1BF0DE",
 			Routine: 
 				{
 					Id: "A2F19A01-4FE5-40F2-9985-143F3A0D42AA",
@@ -48,6 +52,8 @@ angular.module("ironTemple").factory("userService", function() {
 	];
 	var selectedRoutine = {};
 
+	var completedExerciseLog = [];
+
 	return {
 		getCurrentUser : function() {
 			return currentUser;
@@ -55,7 +61,7 @@ angular.module("ironTemple").factory("userService", function() {
 
 		addUserRoutine : function(routine) {
 			var newRoutine = {
-				UserName: currentUser,
+				UserId: currentUser.Id,
 				Routine: routine
 			};
 			userRoutines.push(newRoutine);
@@ -64,7 +70,7 @@ angular.module("ironTemple").factory("userService", function() {
 		getUserRoutines : function() {
 			var routines = [];
 			for (i=0; i<userRoutines.length; i++) {
-				if (userRoutines[i].UserName === currentUser) {
+				if (userRoutines[i].UserId === currentUser.Id) {
 					routines.push(userRoutines[i].Routine);
 				}
 			}
@@ -78,6 +84,17 @@ angular.module("ironTemple").factory("userService", function() {
 
 		selectRoutine : function(position) {
 			selectedRoutine = userRoutines[position];
+		},
+
+		completeUserRoutine : function(completeExercises) {
+			var completed = {
+				UserId: currentUser.Id,
+				RoutineId: selectedRoutine.Routine.Id,
+				CompleteDate: new Date(),
+				Exercises: completeExercises
+			};
+
+			completedExerciseLog.push(completed);
 		}
 
 	};
