@@ -17,15 +17,15 @@
 	</div>
 </div>
 <form name="routineForm">
-	<div class="row">
+	<div class="row exercise-row">
 		<div class="col-md-3">
 			<input type="text" name="exerciseName" data-ng-model="exerciseName" placeholder="Exercise name" required/>
 		</div>
-		<div class="col-md-3">
-			<input type="number" min=0 name="exerciseQuantity" data-ng-model="exerciseQuantity" placeholder="Quantity" required/>
-		</div>
-		<div class="col-md-3">
-			<select data-ng-model="exerciseUnit" required>
+	</div>
+	<div class="row exercise-row">
+		<div class="col-md-6">
+			<span class="grammar">For </span><input type="number" min=0 name="exerciseQuantity" data-ng-model="exerciseQuantity" placeholder="Quantity" required/>
+			<select id="unit-select" data-ng-model="exerciseUnit" required>
 				<option selected>Select a unit</option>
 				<option>Reps</option>
 				<option>Minutes</option>
@@ -33,10 +33,13 @@
 				<option>Calories</option>
 			</select>
 		</div>
-		<div class="col-md-3">
-			<input type="number" data-ng-model="exerciseSets" name="exerciseSets" min=1 placeholder="Sets"/>
-		</div>
 	</div>
+	<div class="row exercise-row">
+			<div class="col-md-6">
+				<span class="grammar">Repeat </span><input type="number" data-ng-model="exerciseSets" name="exerciseSets" min=1 placeholder="Sets"/>
+			<span> times. </span>
+			</div>	
+		</div>
 	<div class="row add-exercise">
 		<div class="col-md-2">
 			<button class="btn btn-primary" data-ng-click="addExercise()">Add to Routine</button>

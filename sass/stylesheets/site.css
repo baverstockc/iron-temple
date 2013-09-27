@@ -64,30 +64,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 5, ../sass/site.scss */
+.exercise-row {
+  margin-top: 15px;
+}
+
+/* line 12, ../sass/site.scss */
 .add-exercise {
   margin-top: 20px;
 }
 
-/* line 9, ../sass/site.scss */
+/* line 16, ../sass/site.scss */
+.grammar {
+  margin-right: 15px;
+}
+
+/* line 20, ../sass/site.scss */
 body {
   height: 100%;
   background-color: white;
 }
 
-/* line 14, ../sass/site.scss */
+/* line 25, ../sass/site.scss */
 .main {
   font-family: Segoe UI, Verdana, Arial;
 }
-/* line 17, ../sass/site.scss */
+/* line 28, ../sass/site.scss */
 .main .footer-area {
   padding-top: 48px;
 }
-/* line 21, ../sass/site.scss */
+/* line 32, ../sass/site.scss */
 .main .jumbotron {
   text-align: center;
 }
 
-/* line 26, ../sass/site.scss */
+/* line 37, ../sass/site.scss */
 .logo {
   background-image: url("../../assets/img/temple-small.png");
   background-repeat: no-repeat;
@@ -95,17 +105,17 @@ body {
   width: 217px;
 }
 
-/* line 33, ../sass/site.scss */
+/* line 44, ../sass/site.scss */
 [class*="-img"] {
   cursor: pointer;
 }
 
-/* line 37, ../sass/site.scss */
+/* line 48, ../sass/site.scss */
 .info-header {
   font-size: 1.2em;
 }
 
-/* line 41, ../sass/site.scss */
+/* line 52, ../sass/site.scss */
 .routine-img {
   background-image: url("../../assets/img/routine.png");
   background-repeat: no-repeat;
@@ -115,7 +125,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 50, ../sass/site.scss */
+/* line 61, ../sass/site.scss */
 .pattern-img {
   background-image: url("../../assets/img/pattern.png");
   background-repeat: no-repeat;
@@ -125,7 +135,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 59, ../sass/site.scss */
+/* line 70, ../sass/site.scss */
 .settings-img {
   background-image: url("../../assets/img/settings.png");
   background-repeat: no-repeat;
@@ -135,7 +145,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 68, ../sass/site.scss */
+/* line 79, ../sass/site.scss */
 .weights-img {
   background-image: url("../../assets/img/weightlifting.png");
   background-repeat: no-repeat;
@@ -146,40 +156,45 @@ body {
   margin-top: 10px;
 }
 
-/* line 78, ../sass/site.scss */
+/* line 89, ../sass/site.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 82, ../sass/site.scss */
+/* line 93, ../sass/site.scss */
 .container .jumbotron {
   border-radius: 0;
 }
 
-/* line 87, ../sass/site.scss */
+/* line 98, ../sass/site.scss */
 .setup-options li {
   padding: 5px 0 5px 0;
 }
 
-/* line 94, ../sass/site.scss */
+/* line 105, ../sass/site.scss */
 .navbar-nav li a {
   float: left;
   cursor: pointer;
 }
 
-/* line 101, ../sass/site.scss */
+/* line 112, ../sass/site.scss */
 .navbar-default .navbar-brand {
   font-size: 1.5em;
 }
 
 @media (max-width: 992px) {
-  /* line 107, ../sass/site.scss */
+  /* line 118, ../sass/site.scss */
   .col-md-3 {
     padding: 5px 0 5px 0;
   }
+
+  /* line 122, ../sass/site.scss */
+  .repeat-span {
+    margin-top: 15px;
+  }
 }
 @media (max-width: 500px) {
-  /* line 113, ../sass/site.scss */
+  /* line 128, ../sass/site.scss */
   .settings-img, .routine-img, .pattern-img {
     display: none;
   }

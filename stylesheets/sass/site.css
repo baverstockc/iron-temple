@@ -64,21 +64,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 5, ../../sass/sass/site.scss */
-body {
-  height: 100%;
-  background-color: #dddddd;
+#exercise-name-row, #exercise-data-row {
+  margin: 10px 0 10px 0;
 }
 
-/* line 10, ../../sass/sass/site.scss */
-.main {
-  font-family: Segoe UI, Verdana, Arial;
+/* line 9, ../../sass/sass/site.scss */
+.add-exercise {
+  margin-top: 20px;
 }
+
 /* line 13, ../../sass/sass/site.scss */
-.main .footer-area {
-  padding-top: 48px;
+body {
+  height: 100%;
+  background-color: white;
 }
 
 /* line 18, ../../sass/sass/site.scss */
+.main {
+  font-family: Segoe UI, Verdana, Arial;
+}
+/* line 21, ../../sass/sass/site.scss */
+.main .footer-area {
+  padding-top: 48px;
+}
+/* line 25, ../../sass/sass/site.scss */
+.main .jumbotron {
+  text-align: center;
+}
+
+/* line 30, ../../sass/sass/site.scss */
 .logo {
   background-image: url("../../assets/img/temple-small.png");
   background-repeat: no-repeat;
@@ -86,22 +100,17 @@ body {
   width: 217px;
 }
 
-/* line 25, ../../sass/sass/site.scss */
+/* line 37, ../../sass/sass/site.scss */
 [class*="-img"] {
   cursor: pointer;
 }
 
-/* line 29, ../../sass/sass/site.scss */
-.info {
-  background-color: white;
-}
-
-/* line 33, ../../sass/sass/site.scss */
+/* line 41, ../../sass/sass/site.scss */
 .info-header {
   font-size: 1.2em;
 }
 
-/* line 37, ../../sass/sass/site.scss */
+/* line 45, ../../sass/sass/site.scss */
 .routine-img {
   background-image: url("../../assets/img/routine.png");
   background-repeat: no-repeat;
@@ -111,7 +120,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 46, ../../sass/sass/site.scss */
+/* line 54, ../../sass/sass/site.scss */
 .pattern-img {
   background-image: url("../../assets/img/pattern.png");
   background-repeat: no-repeat;
@@ -121,7 +130,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 55, ../../sass/sass/site.scss */
+/* line 63, ../../sass/sass/site.scss */
 .settings-img {
   background-image: url("../../assets/img/settings.png");
   background-repeat: no-repeat;
@@ -131,33 +140,52 @@ body {
   margin-top: 10px;
 }
 
-/* line 64, ../../sass/sass/site.scss */
+/* line 72, ../../sass/sass/site.scss */
 .weights-img {
   background-image: url("../../assets/img/weightlifting.png");
   background-repeat: no-repeat;
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
   float: left;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
-/* line 73, ../../sass/sass/site.scss */
+/* line 82, ../../sass/sass/site.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 77, ../../sass/sass/site.scss */
+/* line 86, ../../sass/sass/site.scss */
 .container .jumbotron {
   border-radius: 0;
 }
 
-/* line 83, ../../sass/sass/site.scss */
+/* line 91, ../../sass/sass/site.scss */
+.setup-options li {
+  padding: 5px 0 5px 0;
+}
+
+/* line 98, ../../sass/sass/site.scss */
 .navbar-nav li a {
   float: left;
   cursor: pointer;
 }
 
-/* line 90, ../../sass/sass/site.scss */
+/* line 105, ../../sass/sass/site.scss */
 .navbar-default .navbar-brand {
   font-size: 1.5em;
+}
+
+@media (max-width: 992px) {
+  /* line 111, ../../sass/sass/site.scss */
+  .col-md-3 {
+    padding: 5px 0 5px 0;
+  }
+}
+@media (max-width: 500px) {
+  /* line 117, ../../sass/sass/site.scss */
+  .settings-img, .routine-img, .pattern-img {
+    display: none;
+  }
 }

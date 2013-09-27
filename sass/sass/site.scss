@@ -2,8 +2,19 @@
 
 $main-color: white;
 
+.exercise-row {
+	margin-top: 15px;
+}
+
+#unit-select {
+}
+
 .add-exercise {
 	margin-top: 20px;
+}
+
+.grammar {
+	margin-right: 15px;
 }
 
 body {
@@ -107,6 +118,10 @@ body {
 	.col-md-3 {
 		padding: 5px 0 5px 0;
 	}
+
+	.repeat-span {
+ 		margin-top: 15px;
+ 	}
  }
 
  @media (max-width: 500px) { 
