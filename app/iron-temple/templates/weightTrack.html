@@ -8,3 +8,33 @@
 		<p>How much do you weigh today?</p>
 	</div>
 </div>
+<div class="row">
+	<div class="col-md-3 col-md-offset2">
+		<input type="number" data-ng-model="todaysWeight" min=0 /><span> {{weightUnit()}}</span>
+	</div>
+	<div class="col-md-2 col-md-offset2">
+		<button data-ng-click="submitWeight()">Submit</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Progress towards your weight goal</h3>
+						<canvas id="myChart" width="600" height="400"></canvas>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>{{distanceToGoal()}}</h4>
+					</div>
+				</div>	
+
+			</div>
+			<div class="col-md-6">
+			</div>
+		</div>	
+	</div>	
+</div>	

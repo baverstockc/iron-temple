@@ -2,7 +2,8 @@ angular.module("ironTemple").factory("userService", function() {
 	var currentUser = {
 		Id: "F4E1ED37-F4B5-46BE-82F4-60DC1A1BF0DE",
 		Name: "Christian",
-		Measurements: "M"
+		Measurements: "M",
+		weightGoal: 65
 	};
 	var userRoutines = [
 		{
