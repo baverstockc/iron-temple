@@ -26,5 +26,10 @@ angular.module("ironTemple").config(function($routeProvider) {
 		controller: "routinesController"
 	});	
 
+	$routeProvider.when("/WeightTrack", {
+		templateUrl: "iron-temple/templates/weightTrack.html",
+		controller: "weightTrackController"
+	});	
+
 	$routeProvider.otherwise({ redirectTo : "/homepage" });
 });
