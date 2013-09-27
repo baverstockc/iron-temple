@@ -4,11 +4,36 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-12" data-ng-repeat="exercise in selectedRoutine.Routine.Exercises">
-		<p>Exercise: {{exercise.Name}}</p>
-		<div class="col-md-6" data-ng-repeat="sets in exercise.Sets">
-		<span>Set {{$index+1}}: </span><span>{{sets.Quantity}} </span><span>{{sets.Unit}}</span>
+	<div class="panel-group col-md-12" id="accordion">
+		<div class="panel panel-default" data-ng-repeat="exercise in selectedRoutine.Routine.Exercises">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">
+						Exercise: {{exercise.Name}}
+					</a>
+				</div>
+			</div>
+			<div id="collapse{{$index}}" class="panel-collapse collapse" data-ng-class="{'in': currentExercise === $index}">
+		      <div class="panel-body">
+	      			<div class="panel-group col-md-12" id="accordion2">
+						<div class="panel panel-default" data-ng-repeat="sets in exercise.Sets">
+							<div class="panel-heading">
+								<div class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#{{$parent.$index}}Collapse{{$index}}">
+										<span>Set {{$index+1}}</span>
+									</a>
+								</div>
+							</div>
+							<div id="{{$parent.$index}}Collapse{{$index}}" class="panel-collapse collapse" data-ng-class="{'in': currentSet === $index}>
+						      <div class="panel-body">
+					      			<span>{{sets.Quantity}} </span><span>{{sets.Unit}} x </span><span><input type="number" /> Kg</span>
+					      			<span class=".glyphicon .glyphicon-ok-sign"></span>
+						      </div>
+				    		</div>
+						</div>
+					</div>
+		      </div>
+    		</div>
 		</div>
 	</div>
-
 </div>

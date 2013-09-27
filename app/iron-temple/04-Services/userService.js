@@ -1,6 +1,51 @@
 angular.module("ironTemple").factory("userService", function() {
 	var currentUser = "Christian";
-	var userRoutines = [];
+	var userRoutines = [
+		{
+			UserName: "Christian",
+			Routine: 
+				{
+					Id: "A2F19A01-4FE5-40F2-9985-143F3A0D42AA",
+					Name: "Squat and Bench 3x5",
+					Exercises: [
+						{
+							Name: "Squat",
+							Sets: [
+								{
+									Quantity: 5,
+									Unit: "Reps"
+								},
+								{
+									Quantity: 5,
+									Unit: "Reps"
+								},
+								{
+									Quantity: 5,
+									Unit: "Reps"
+								}
+							]
+						},
+						{
+							Name: "Bench Press",
+							Sets: [
+								{
+									Quantity: 5,
+									Unit: "Reps"
+								},
+								{
+									Quantity: 5,
+									Unit: "Reps"
+								},
+								{
+									Quantity: 5,
+									Unit: "Reps"
+								}
+							]
+						}
+					]
+				}
+		}
+	];
 	var selectedRoutine = {};
 
 	return {
@@ -10,7 +55,7 @@ angular.module("ironTemple").factory("userService", function() {
 
 		addUserRoutine : function(routine) {
 			var newRoutine = {
-				Name: currentUser,
+				UserName: currentUser,
 				Routine: routine
 			};
 			userRoutines.push(newRoutine);
@@ -19,7 +64,7 @@ angular.module("ironTemple").factory("userService", function() {
 		getUserRoutines : function() {
 			var routines = [];
 			for (i=0; i<userRoutines.length; i++) {
-				if (userRoutines[i].Name === currentUser) {
+				if (userRoutines[i].UserName === currentUser) {
 					routines.push(userRoutines[i].Routine);
 				}
 			}

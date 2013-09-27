@@ -5,14 +5,20 @@
 </div>
 <div class="row">
 	<div class="col-md-8">
-		<table data-ng-show="routines.length > 0">
+		<table class="table table-stripped" data-ng-show="routines.length > 0">
+			<thead>
+				<th>#</th>
+				<th>Routine</th>
+				<th></th>
+			</thead>
 			<tr data-ng-repeat="routine in routines">
+				<td>{{$index + 1}}</td>
 				<td>{{routine.Name}}</td>
 				<td><button class="btn btn-primary btn-xs" ng-click="workout($index)">Workout!</button></td>
 			</tr>
 		</table>
 	</div>
 	<div class="col-md-8">
-		<p data-ng-show="routines.length === 0">You don't currently have any routines, <a href="#/NewRoutine">add some now</a></p>
+		<p data-ng-hide="routines.length > 0">You don't currently have any routines, <a href="#/NewRoutine">add some now</a></p>
 	</div>
 </div>
