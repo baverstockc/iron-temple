@@ -1,6 +1,9 @@
-angular.module("ironTemple", []);
+angular.module("ironTemple", ["ngResource"])
+	.value("serviceUris", {
+		userRoutinesUri: "getUserRoutines"
+	})
 
-angular.module("ironTemple").config(function($routeProvider) {
+	.config(function($routeProvider) {
 	$routeProvider.when("/", {
 		templateUrl: "iron-temple/templates/homepage.html",
 		controller: "homepageController"

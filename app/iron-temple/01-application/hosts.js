@@ -1,0 +1,1 @@
+var baseUri = "http://localhost:1337/";

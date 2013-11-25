@@ -1,4 +1,4 @@
-angular.module("ironTemple").factory("userService", function() {
+angular.module("ironTemple").factory("userService", function($resource, serviceUris) {
 	var currentUser = {
 		Id: "F4E1ED37-F4B5-46BE-82F4-60DC1A1BF0DE",
 		Name: "Christian",
@@ -70,11 +70,14 @@ angular.module("ironTemple").factory("userService", function() {
 
 		getUserRoutines : function() {
 			var routines = [];
-			for (i=0; i<userRoutines.length; i++) {
-				if (userRoutines[i].UserId === currentUser.Id) {
-					routines.push(userRoutines[i].Routine);
-				}
-			}
+			// for (i=0; i<userRoutines.length; i++) {
+			// 	if (userRoutines[i].UserId === currentUser.Id) {
+			// 		routines.push(userRoutines[i].Routine);
+			// 	}
+			// }
+
+			var userRoutinesResource = $resource(serviceUris.userRoutinesUri);
+			userRoutinesResource.query();
 
 			return routines;
 		},
